@@ -41,17 +41,13 @@ class TransactionList extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       transactions[index].title,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                        color: Theme.of(context).primaryColor,
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                     Text(
                       // you can custom the format by putting 'yyyy-MM-dd' in DateFormat
                       DateFormat().format(transactions[index].timestamp),
                       style: TextStyle(
-                        color: Theme.of(context).primaryColor,
+                        color: Colors.grey,
                       ),
                     ),
                   ],
