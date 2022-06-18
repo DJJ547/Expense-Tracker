@@ -22,7 +22,7 @@ class TransactionList extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Colors.purple,
+                      color: Theme.of(context).primaryColor,
                       width: 2,
                     ),
                   ),
@@ -32,7 +32,7 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
-                      color: Colors.purple,
+                      color: Theme.of(context).primaryColor,
                     ),
                   ),
                 ),
@@ -44,13 +44,14 @@ class TransactionList extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
+                        color: Theme.of(context).primaryColor,
                       ),
                     ),
                     Text(
                       // you can custom the format by putting 'yyyy-MM-dd' in DateFormat
                       DateFormat().format(transactions[index].timestamp),
                       style: TextStyle(
-                        color: Colors.grey,
+                        color: Theme.of(context).primaryColor,
                       ),
                     ),
                   ],
