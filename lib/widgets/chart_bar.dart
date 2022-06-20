@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_complete_guide/widgets/chart.dart';
 
 class ChartBar extends StatelessWidget {
   final String label;
